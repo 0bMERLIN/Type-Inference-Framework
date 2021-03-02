@@ -11,6 +11,16 @@
   let recursive = fix \self -> \x -> self x
   in recursive 20
   ```
+  returns
+  ```haskell
+  b -> c
+  ```
+  basically the same as in ghci
+  ```haskell
+  > let rec x = rec x
+  > :t rec
+  > rec :: t1 -> t2
+  ```
 
 
 
