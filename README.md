@@ -5,6 +5,12 @@
 ## Stable:
   the stable version of the type inferencer.
   no support for data structures.
+### Examples:
+  ```haskell
+  -- infinitely recursive function
+  let recursive = fix \self -> \x -> self x
+  in recursive 20
+  ```
 
 
 
