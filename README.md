@@ -9,17 +9,22 @@
 
 
 ## Experimental (ADTs):
+  latest semi-stable version
+  
   basically stable + support for ADTs:
  
  ```haskell
   data MaybeInt
-  = Just Int
-  | Nothing
+    = Just Int
+    | Nothing
  ```
 
 
 
 ## Experimental (GADTs):
+  WARNING:
+    from this version on, I would not advise you to use the framework.
+    It lets very common errors pass, that can result in segfaults later in the compiler pipeline.
   support for adts with type variables:
 
   ```haskell
@@ -29,8 +34,7 @@
   ```
 
   problems:
-
-  the GADTs can only be concrete. You cant have
+  - the GADTs can only be concrete. You cant have
 
   ```haskell
   f :: (a -> m a) -> a -> m a
@@ -41,3 +45,6 @@
   solves the problem of the previous iteration, but
   lacks kind inference, so it sometimes lets errors
   pass.
+
+## Planned Experimental (GADT-Kinds)
+  Experimental (GADT-TVs) + Kind Inference.
