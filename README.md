@@ -1,12 +1,12 @@
 # Type-Inference-Framework
 
-# Stable:
+## Stable:
   the stable version of the type inferencer.
   no support for data structures.
 
 
 
-# Experimental (ADTs):
+## Experimental (ADTs):
   basically stable + support for ADTs:
  
  ```haskell
@@ -17,7 +17,7 @@
 
 
 
-# Experimental (GADTs):
+## Experimental (GADTs):
   support for adts with type variables:
 
   ```haskell
@@ -35,7 +35,7 @@
   ```
 
 
-# Experimental (GADT-TVs):
+## Experimental (GADT-TVs):
   solves the problem of the previous iteration, but
   lacks kind inference, so it sometimes lets errors
   pass.
