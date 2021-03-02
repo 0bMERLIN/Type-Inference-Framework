@@ -43,7 +43,7 @@
 
 ## Experimental (GADT-TVs):
   solves the problem of the previous iteration, but
-  lacks kind inference, so it sometimes lets errors
+  lacks kind inference, so it very often lets errors
   pass.
 
 ## Planned Experimental (GADT-Kinds)
