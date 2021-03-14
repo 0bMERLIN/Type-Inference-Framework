@@ -40,7 +40,7 @@
 ## Experimental (GADTs):
   WARNING:
     from this version on, I would not advise you to use the framework.
-    It lets very common errors pass, that can result errors later in the compiler pipeline.
+    It lets very common errors pass, that can result in errors later in the compiler pipeline.
   support for adts with type variables:
 
   ```haskell
